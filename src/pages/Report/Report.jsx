@@ -121,7 +121,7 @@ const Report = () => {
       render: (_, record) => (
         <Space size="middle">
           <Typography>
-            {dayjs(record.order_date).format("MMM DD, YYYY | hh:mm A")}
+            {dayjs(record.order_date.slice(0, -1)).format("MMM DD, YYYY | hh:mm A")}
           </Typography>
         </Space>
       ),
