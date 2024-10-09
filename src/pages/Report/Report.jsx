@@ -54,8 +54,8 @@ const Report = () => {
   const onFinish = ({ date, user_id }) => {
     downloadReport({
       date: [
-        dayjs(date[0]).subtract(8, "hour").format("YYYY-MM-DD HH:mm:ss"),
-        dayjs(date[1]).subtract(8, "hour").format("YYYY-MM-DD HH:mm:ss"),
+        dayjs(date[0]).format("YYYY-MM-DD HH:mm:ss"),
+        dayjs(date[1]).format("YYYY-MM-DD HH:mm:ss"),
       ],
       user_id: user.access_level == 2 ? user.id : user_id,
     });
