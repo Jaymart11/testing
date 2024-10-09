@@ -150,7 +150,7 @@ const Report = () => {
             okText="Yes"
             cancelText="No"
           >
-            <Button danger disabled={!isToday(new Date(record.order_date))}>
+            <Button danger disabled={!isToday(new Date(record.order_date.slice(0, -1)))}>
               Delete
             </Button>
           </Popconfirm>
