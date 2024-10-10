@@ -93,7 +93,7 @@ const UpdateStockModal = ({ visible, onCancel, stock }) => {
           >
             {({ getFieldValue }) =>
               !getFieldValue("packaging_id") ? (
-                <Form.Item name="product_id" label="Damaged Product">
+                <Form.Item name="product_id" label="Product">
                   <Select
                     disabled={true}
                     showSearch
@@ -119,7 +119,7 @@ const UpdateStockModal = ({ visible, onCancel, stock }) => {
           >
             {({ getFieldValue }) =>
               !getFieldValue("product_id") ? (
-                <Form.Item name="packaging_id" label="Damaged Packaging">
+                <Form.Item name="packaging_id" label="Packaging">
                   <Select
                     showSearch
                     filterOption={filterOption}
